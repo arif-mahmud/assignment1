@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"></meta>
+
+<title>Insert title here</title>
+<!-- <link rel="stylesheet" type="text/css" 
+	href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+	
+	<title>Spring Boot Thymeleaf + Spring Security</title>
+
+    <div th:replace="fragments/header :: header-css"/>
+    
+</head>
+<body>
+<div th:replace="fragments/header :: header"/>
+
+    <table class="table table-bordered">
+		<thead>
+			<tr>
+				<td>User</td>
+				<td>Password</td>
+				<h1>Spring Boot Web Thymeleaf + Spring Security</h1>
+				 <h2>3. Visit <a th:href="@{/about}">Normal page</a></h2>
+				
+			</tr>
+		</thead>
+	</table>
+	
+	<div th:replace="fragments/footer :: footer"/>
+	
+</body>
+</html>
